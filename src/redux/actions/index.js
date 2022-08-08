@@ -4,6 +4,8 @@ import {
   DECREASE_COUNTER_ASYNC,
   INCREMENT_BY_ONE,
   INCREMENT_BY_TEN,
+  NUMBER_BADHAO_ACTION_ASYNC,
+  NUMBER_GHATAO_ACTION_ASYNC,
 } from './types';
 
 // export const numberIncrement = () => {
@@ -24,17 +26,37 @@ import {
 //   };
 // };
 
-export const exceedCounter = () => {
-  console.log('exceedCounter');
+// export const exceedCounter = () => {
+//   console.log('exceedCounter');
+//   return {
+//     type: INCREMENT_BY_ONE,
+//     // value,
+//   };
+// };
+// export const exceededCounter = () => {
+//   console.log('exceededCounter');
+//   return {
+//     type: INCREMENT_BY_TEN,
+//     // value,
+//   };
+// };
+
+export const Numberbadhao = () => {
+  // console.log('Numberbadhao');
   return {
-    type: INCREMENT_BY_ONE,
+    type: NUMBER_BADHAO_ACTION_ASYNC,
     // value,
+    // payload,
   };
 };
-export const exceededCounter = () => {
-  console.log('exceededCounter');
+
+export const NumberGhatao = () => {
+  // console.log('NumberGhatao');
   return {
-    type: INCREMENT_BY_TEN,
+    type: NUMBER_GHATAO_ACTION_ASYNC,
     // value,
+    // payload,
   };
 };
+
+

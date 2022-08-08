@@ -1,10 +1,11 @@
-// // Imports: Dependencies
-// import {combineReducers} from 'redux';
+// Imports: Dependencies
+import { combineReducers } from 'redux';
 // // Imports: Reducers
 // import counterReducer from './counterReducer';
-// // Redux: Root Reducer
-// const rootReducer = combineReducers({
-//   counter: counterReducer,
-// });
-// // Exports
-// export default rootReducer;
+import CounterKaReducer from './root1-reducer1';
+// Redux: Root Reducer
+const rootReducer = combineReducers({
+    counters: CounterKaReducer,
+});
+// Exports
+export default rootReducer;

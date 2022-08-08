@@ -1,4 +1,4 @@
-import {all, fork} from 'redux-saga/effects';
+import { all, fork } from 'redux-saga/effects';
 
 import {
   watchincreaseNumByTen,
@@ -6,13 +6,18 @@ import {
   watchdecreaseCounter,
   watchIncreaseCounter,
 } from './counterSaga';
-
+import { watchtheAddtionFunction } from './numberBadhaoSaga';
+import { watchtheSubtractFunction } from './numberBadhaoSaga';
 // Redux saga// root saga
 export function* rootSaga() {
   yield all([
-    fork(watchIncreaseCounter),
-    fork(watchdecreaseCounter),
-    fork(watchincreaseNumByOne),
-    fork(watchincreaseNumByTen),
+
+    fork(watchtheAddtionFunction),
+    fork(watchtheSubtractFunction)
+
+    // fork(watchIncreaseCounter),
+    // fork(watchdecreaseCounter),
+    // fork(watchincreaseNumByOne),
+    // fork(watchincreaseNumByTen),
   ]);
 }
